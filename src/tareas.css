@@ -1,0 +1,72 @@
+#lista-tareas {
+    margin-top: 30px;
+    padding: 0;
+    list-style-type: none;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tarea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+.tarea.completada {
+    background-color: #d4edda;
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.tarea span {
+    flex-grow: 1;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.eliminar {
+    background-color: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.eliminar:hover {
+    background-color: #c82333;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

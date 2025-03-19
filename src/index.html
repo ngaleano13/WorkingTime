@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor de Tiempo</title>
+    <link rel="stylesheet" href="temporizador.css">
+    <link rel="stylesheet" href="tareas.css">
+</head>
+<body>
+    <h1>Monitor de Tiempo en Aplicaciones</h1>
+    <h3>Selecciona una aplicación</h3>
+    <select id="app-lista">
+        <option value="">Cargando aplicaciones...</option>
+    </select>
+    <button onclick="seleccionarApp()">Iniciar</button>
+    <button id="toggle-btn" onclick="toggleFuncion()">Pausar</button>
+    <button id="actualizar-lista" onclick="actualizarLista()">Actualizar procesos</button>
+    <div id="estado">Tiempo de trabajo: 0s | Tiempo inactivo: 0s</div>
+    <div>
+        <button onclick="guardarTiempos()">Guardar Tiempo</button>
+        <button onclick="cargarTiempos()">Cargar Tiempo</button>
+
+    </div>
+    <div>
+        <h2>Lista de Tareas</h2>
+        <input type="text" id="input-tarea" placeholder="Escribe una tarea">
+        <button onclick="agregarTarea()">Agregar Tarea</button>
+        <ul id="lista-tareas"></ul>
+    </div>
+    <script src="tareas.js"></script>
+    <script src="renderer.js"></script>
+</body>
+</html>
