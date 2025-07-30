@@ -24,3 +24,5 @@ Por el momento esta en una version muy temprana la aplicacion, tuvieron varios c
 * Customizacion de posible Sonido de inactividad
 * Posibilidad de guardar la lista de tareas
 * Encriptacion de archivos para evitar modificaciones externas y mejorar la estabilidad del programa
+
+# Proyecto pausado por problemas de salud
